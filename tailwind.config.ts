@@ -6,15 +6,21 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {
-    extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-    },
-  },
-  plugins: [],
+  theme: {},
+  plugins: [require("daisyui"), require("@tailwindcss/forms"), require("@headlessui/tailwindcss")],
 };
 export default config;
+
+// const withMT = require("@material-tailwind/react/utils/withMT");
+// const colors = require("tailwindcss/colors");
+
+// /** @type {import('tailwindcss').Config} */
+// module.exports = withMT({
+//   content: [
+//     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+//     "./components/**/*.{js,ts,jsx,tsx,mdx}",
+//     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+//   ],
+//   theme: {},
+//   plugins: [require("daisyui"), require("@tailwindcss/forms")],
+// });
