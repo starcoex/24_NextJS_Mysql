@@ -44,7 +44,7 @@ export default function SocialLogin({ text }: FormSocialProps) {
         </Link>
         <Link
           href={"/"}
-          className="flex w-full items-center justify-center gap-3 rounded-md bg-[#FEE500] px-3 py-1.5 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#24292F]"
+          className="flex w-full items-center justify-center gap-3 rounded-md bg-[#FEE500] px-3 py-1.5 dark:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#24292F]"
         >
           <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="10" cy="10" r="10" fill="#FEE500" />
@@ -69,7 +69,7 @@ export default function SocialLogin({ text }: FormSocialProps) {
               fill="#FEE500"
             />
           </svg>
-          <span className="text-sm font-medium leading-6 text-gray-700">Kakao</span>
+          <span className="text-sm font-medium leading-6 dark:text-white text-gray-700">Kakao</span>
         </Link>
       </div>
     </>

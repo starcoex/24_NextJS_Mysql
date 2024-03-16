@@ -4,8 +4,7 @@ import { Container } from "@/components/Container";
 import { SelectField, TextField } from "@/components/Fields";
 import FormButton from "@/components/Form-Btn";
 import FormInput from "@/components/Form-Input";
-import SocialLogin from "@/components/Socail-login";
-import { ChatBubbleOvalLeftEllipsisIcon } from "@heroicons/react/16/solid";
+import SocialLogin from "@/components/Social-login";
 import { Metadata } from "next";
 import Link from "next/link";
 
