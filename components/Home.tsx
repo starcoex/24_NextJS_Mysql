@@ -1,5 +1,4 @@
 import AuthLayout from "@/components/AuthLayout";
-import { Button } from "@/components/Button";
 import { TextField } from "@/components/Fields";
 import { Metadata } from "next";
 import { minify } from "next/dist/build/swc";

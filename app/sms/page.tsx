@@ -1,6 +1,6 @@
 import AuthLayout from "@/components/AuthLayout";
-import FormButton from "@/components/Form-Btn";
-import FormInput from "@/components/Form-Input";
+import FormButton from "@/components/Button";
+import FormInput from "@/components/Input";
 import Link from "next/link";
 
 export default function SMSLogin() {
@@ -18,9 +18,9 @@ export default function SMSLogin() {
       }
     >
       <form action="" className="flex flex-col gap-3">
-        <FormInput type="number" required placeholder="핸드폰 번호" errors={[]} />
-        <FormInput type="number" required placeholder="인증 번호" errors={[]} />
-        <FormButton text="핸드폰 로그인 " loading={false} />
+        <FormInput type="number" required placeholder="핸드폰 번호" errors={[]} name="phone" />
+        <FormInput type="number" required placeholder="인증 번호" errors={[]} name="phone-confirm" />
+        <FormButton text="핸드폰 로그인 " />
       </form>
     </AuthLayout>
   );
